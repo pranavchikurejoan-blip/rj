@@ -3,43 +3,58 @@
 <head>
   <meta charset="UTF-8" />
   <title>Course Certificate</title>
+
   <style>
     html, body {
       margin: 0;
       padding: 0;
       height: 100%;
     }
+
     body {
       display: flex;
       justify-content: center;
       align-items: center;
       background: #ffffff;
-      font-family: Arial, sans-serif;
+      font-family: "Segoe UI", Arial, Helvetica, sans-serif;
     }
-    .btn {
-      background-color: #2a71c0;
+
+    /* NPTEL-like button */
+    .nptel-btn {
+      display: inline-block;
+      background-color: #2f6fbd;        /* NPTEL blue */
       color: #ffffff;
-      padding: 15px 40px;
-      font-size: 18px;
-      border-radius: 8px;
+      padding: 14px 36px;
+      font-size: 16px;
+      font-weight: 600;
+      border-radius: 6px;
       text-decoration: none;
-      border: none;
-      cursor: pointer;
+      border: 1px solid #2a64aa;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+      transition: background-color 0.2s ease, box-shadow 0.2s ease;
     }
-    .btn:hover {
-      background-color: #1f5a99;
+
+    .nptel-btn:hover {
+      background-color: #255fa3;
+      box-shadow: 0 3px 6px rgba(0, 0, 0, 0.25);
+    }
+
+    .nptel-btn:active {
+      background-color: #1e4f8a;
     }
   </style>
 </head>
 <body>
-  <!-- PDF is in the SAME folder as this index.html -->
+
+  <!-- Same-folder PDF -->
   <a
-    class="btn"
+    class="nptel-btn"
     href="NPTEL25CS46S34740005104382811.pdf"
     target="_blank"
     rel="noopener"
   >
     Course Certificate
   </a>
+
 </body>
 </html>
